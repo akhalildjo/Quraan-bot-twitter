@@ -17,14 +17,15 @@ import requests
 import shutil
 from pyuploadcare import File, conf
 from pyuploadcare import Uploadcare
+import os 
 
-#Define HCTI API keys and link
+#Define HCTI API keys and link (don't forget to set config vars on Heroku)
 HCTI_API_ENDPOINT = "https://hcti.io/v1/image"
-#HCTI_API_USER_ID = '61cadc9f-a8f0-4ae9-bdd5-55bdc7665e12'
-#HCTI_API_KEY = '10bf943e-b62b-4d0d-85d5-2fc55b9a78f3'
+HCTI_API_USER_ID = os.getenv("HCTI_API_USER_ID")
+HCTI_API_KEY = os.getenv("HCTI_API_KEY")
 
 #Define uploadcare API keys ans save them into variable "uploadcare"
-uploadcare = Uploadcare(public_key, secret_key)
+uploadcare = os.getenv("Uploadcare")
 
 #The function that will parse a verse in french from the api alquran, we will call that function later
 def bring_verse(verse):
