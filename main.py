@@ -25,7 +25,8 @@ HCTI_API_USER_ID = os.getenv("HCTI_API_USER_ID")
 HCTI_API_KEY = os.getenv("HCTI_API_KEY")
 
 #Define uploadcare API keys ans save them into variable "uploadcare"
-uploadcare = os.getenv("Uploadcare")
+#uploadcare = os.getenv("Uploadcare") 
+uploadcare = Uploadcare(public_key=os.getenv("public_key"), secret_key=os.getenv("secret_key"))
 
 #The function that will parse a verse in french from the api alquran, we will call that function later
 def bring_verse(verse):
