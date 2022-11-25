@@ -1,7 +1,7 @@
 ![alt text][basmalah]
 
 
-# Athar el quraan
+# Quraan-bot-twitter
 
 
 A program that will automatically share on twitter the translated verses of the Quraan in a "random" way every day at 10 am.
