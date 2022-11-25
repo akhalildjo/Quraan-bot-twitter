@@ -6,6 +6,7 @@
 
 A program that will automatically share on twitter the translated verses of the Quraan in a "random" way every day at 10 am.
 
+
 ## Requirements
 
 * Python 3.6 +
@@ -13,6 +14,7 @@ A program that will automatically share on twitter the translated verses of the 
 * [Zapier account](https://zapier.com/app/dashboard)
 * [HCTI account](https://htmlcsstoimage.com/)
 * [Uploadcare account](https://uploadcare.com/)
+
 
 ## Installing 
 
@@ -26,6 +28,9 @@ You will also need to add an Add-on for your worflow, to set a crontask, you mus
 The last step is the most important, you will need to create a Zapier account, then create a new zap, choose Uploadcare as a trigger (it will ask you to link you account with API keys), then for actions, choose twitter : tweet an image ! 
 
 (Before doing all of that, don't forget to test the project localy to make sure it's working, after dewonloading python depedencies with command `pip3 install -r requirements.txt`)
+
+Take a look on my Quraan twitter bot (French) : https://twitter.com/_aathar_
+
 
 ## Special thanks
 
